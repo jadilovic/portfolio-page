@@ -1,0 +1,73 @@
+#root {
+	display: flex;
+	justify-content: center;
+}
+
+.App-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1440px;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	background-color: #282c34;
+}
+
+.logos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.react-logo {
+	height: 20vmin;
+	pointer-events: none;
+}
+
+.node-logo {
+	height: 16vmin;
+	pointer-events: none;
+}
+
+.nav-links {
+}
+
+.profile-link {
+	height: 16vmin;
+}
+
+.description {
+	position: relative;
+}
+
+.developer-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.react-logo,
+	.node-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	width: 100%;
+	max-width: 1200px;
+	min-height: 100vh;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
