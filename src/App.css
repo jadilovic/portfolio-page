@@ -14,6 +14,12 @@
 	padding: 0 20px;
 }
 
+.App-main {
+	width: 100%;
+	max-width: 1200px;
+	min-height: 100vh;
+}
+
 .logos {
 	display: flex;
 	justify-content: center;
@@ -63,12 +69,7 @@ ul {
 
 .welcome {
 	width: 60%;
-}
-
-@media screen and (max-width: 880px) {
-	.welcome {
-		width: 50%;
-	}
+	padding: 30px 0;
 }
 
 .react {
@@ -81,21 +82,124 @@ ul {
 	font-size: 1.5em;
 }
 
-p {
-	margin: 0;
+.contact {
+	font-size: 0.8em;
 	border-bottom: #8cc84b 2px solid;
 	border-top: #61dafb 2px solid;
-	padding-bottom: 8px;
-	margin-bottom: 40px;
+	padding-bottom: 6px;
 	width: fit-content;
 }
 
+.image-container {
+	width: 40%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
 .developer-img {
-	position: absolute;
+	height: 70%;
 	border-radius: 20px;
 	border: 1px solid white;
-	top: 0;
-	right: 0;
+}
+
+.cards {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+.projects-heading {
+	max-width: 1200px;
+	border-top: white 2px solid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 3em;
+}
+
+.card {
+	color: white;
+	padding: 1rem 0;
+}
+
+.skill,
+.project-title {
+	margin: 0;
+	font-weight: 700;
+}
+
+.experience,
+.project-description {
+	margin: 0;
+	font-size: 0.7em;
+}
+
+.project-title,
+.project-description {
+	padding: 10px 0;
+}
+
+.title {
+	padding-top: 20px;
+	border-top: 2px solid white;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+.project-navigation {
+	display: flex;
+	column-gap: 10px;
+	margin-bottom: 20px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.project-navigation a {
+	color: white;
+	padding: 7px 10px 10px 10px;
+	font-size: 0.6em;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 7px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.project-code-btn {
+	width: 100%;
+	background-color: #8cc84b;
+}
+
+.project-demo-btn {
+	width: 100%;
+	background-color: #61dafb;
+}
+
+footer {
+	border-top: 2px solid white;
+	margin: 60px 0;
+}
+
+@media screen and (max-width: 880px) {
+	.welcome {
+		width: 50%;
+	}
+	.image-container {
+		width: 50%;
+	}
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -116,10 +220,15 @@ p {
 	.profile-link {
 		height: 6vmin;
 	}
-	.developer-img {
-		position: relative;
-		max-width: 50%;
+	.image-container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		order: -1;
+	}
+	.developer-img {
+		max-width: 70%;
 	}
 	.welcome {
 		display: flex;
@@ -137,6 +246,12 @@ p {
 	h6 {
 		text-align: center;
 	}
+	.cards {
+		grid-template-columns: 1fr;
+	}
+	.card {
+		text-align: center;
+	}
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -144,12 +259,6 @@ p {
 	.node-logo {
 		animation: App-logo-spin infinite 20s linear;
 	}
-}
-
-.App-header {
-	width: 100%;
-	max-width: 1200px;
-	min-height: 100vh;
 }
 
 .App-link {

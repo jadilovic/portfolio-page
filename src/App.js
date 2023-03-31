@@ -1,76 +1,314 @@
-import reactLogo from './icons/react-logo.svg';
-import nodeLogo from './icons/nodejs-logo.svg';
-import githubLogo from './icons/github-tile.svg';
-import frontendMentor from './icons/frontendmentor.svg';
-import hackerRank from './icons/hackerrank.svg';
-import linkedin from './icons/linkedin-tile.svg';
 import developer from './images/developer.jpg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
 	return (
 		<div className="App-container">
-			<header className="App-header">
-				<nav>
-					<div className="logos">
-						<img src={nodeLogo} className="node-logo" alt="node.js logo" />
-						<img src={reactLogo} className="react-logo" alt="react logo" />
-						<span className="App-link">Jasmin Adilovic</span>
-					</div>
-					<ul className="nav-links">
-						<li>
-							<a href="https://github.com/jadilovic">
-								<img
-									className="profile-link"
-									src={githubLogo}
-									alt="ja github profile"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.frontendmentor.io/profile/jadilovic">
-								<img
-									className="profile-link"
-									src={frontendMentor}
-									alt="ja frontend-mentor profile"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/jasmin-adilovic-2561aa17/">
-								<img
-									className="profile-link"
-									src={linkedin}
-									alt="ja linkedin profile"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.hackerrank.com/jadilovic">
-								<img
-									className="profile-link"
-									src={hackerRank}
-									alt="ja hacker-rank profile"
-								/>
-							</a>
-						</li>
-					</ul>
-				</nav>
+			<main className="App-main">
+				<Navbar />
 				<div className="description">
 					<div className="welcome">
 						<h2>Nice to meet you!</h2>
 						<h4>Welcome to my portfolio site!</h4>
 						<h6>
-							Based in Bosnia, I'm <span className="react">React</span> and
-							<span className="node"> Node </span>
+							Based in Bosnia, I'm <span className="react">React JS</span> and
+							<span className="node"> Node JS </span>
 							developer passionate about building progressive web apps that
-							users enjoy.
+							users enjoy. Let's have a talk to find solutions that are best for
+							your business!
 						</h6>
-						<p>Contact me</p>
+						<a href="mailto: j.adilovic@gmail.com" className="contact">
+							Contact me
+						</a>
 					</div>
-					<img className="developer-img" src={developer} alt="" />
+					<div className="image-container">
+						<img className="developer-img" src={developer} alt="" />
+					</div>
 				</div>
-			</header>
+				<section className="cards">
+					<div className="card">
+						<p className="skill">JavaScript</p>
+						<p className="experience">3 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">React</p>
+						<p className="experience">2 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">Node</p>
+						<p className="experience">2 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">Express</p>
+						<p className="experience">2 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">MongoDB</p>
+						<p className="experience">2 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">HTML</p>
+						<p className="experience">4 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">CSS</p>
+						<p className="experience">4 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">Java</p>
+						<p className="experience">3 Years Experience</p>
+					</div>
+					<div className="card">
+						<p className="skill">MySQL</p>
+						<p className="experience">3 Years Experience</p>
+					</div>
+				</section>
+				<section className="projects-heading">
+					<h1 className="title">Projects</h1>
+					<a href="mailto: j.adilovic@gmail.com" className="contact">
+						Contact me
+					</a>
+				</section>
+				<section className="cards">
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652192660/txgfudhcfcz3khgf9i8u.jpg"
+							alt="Seedlings shop"
+							className="project-img"
+						></img>
+						<div className="project-title">Seedlings Web Shop</div>
+						<div className="project-description">
+							MERN Stack Web Shop Application
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/sadnice"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://sadnice.onrender.com/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652202100/doahsbnielvh7kj3qref.jpg"
+							alt="Task manager"
+							className="project-img"
+						></img>
+						<div className="project-title">Task Manager</div>
+						<div className="project-description">
+							Dashboard MERN Stack Application
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/task-manager-heroku"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://task-manager-b5xr.onrender.com"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652202621/docnsbmo0tmsjibhpyym.jpg"
+							alt="Memory game"
+							className="project-img"
+						></img>
+						<div className="project-title">Memory Game</div>
+						<div className="project-description">
+							React.js Web Application Deployed on Netlify
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/memory-game"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://aki-memory-game.netlify.app/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652204771/tv0d7nim9qfsqimxfol6.jpg"
+							alt="Message board"
+							className="project-img"
+						></img>
+						<div className="project-title">Message Board</div>
+						<div className="project-description">
+							Questions, Answers, Likes, Dislikes and Rankings
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/questionsAnswers"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://questions-answers-mp.herokuapp.com/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652206150/umfhuyqh0gxgiklmoqzm.jpg"
+							alt="User Management"
+							className="project-img"
+						></img>
+						<div className="project-title">User Management</div>
+						<div className="project-description">
+							MERN Stack CRUD Application
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/user-management"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://user-management-m.herokuapp.com/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652207580/qs7xwigyvq7tmue3daad.jpg"
+							alt="Vacation Booking"
+							className="project-img"
+						></img>
+						<div className="project-title">Vacation Booking</div>
+						<div className="project-description">MERN Stack Quiz</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/vacationBooking"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://vacation-booking.herokuapp.com/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652211238/s2ve6ms5raqc7vxexenp.jpg"
+							alt="Work Orders"
+							className="project-img"
+						></img>
+						<div className="project-title">Work Orders</div>
+						<div className="project-description">
+							Furniture Manufacturing and Warehouse Management App
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/furniture"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://furnapp.herokuapp.com/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652216473/u4na3oqwff58qexotesf.jpg"
+							alt="Car Parts"
+							className="project-img"
+						></img>
+						<div className="project-title">Car Parts</div>
+						<div className="project-description">
+							Java and MySQL Warehouse Management App
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/carparts"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://yapauto.herokuapp.com/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1652216862/mficnlgwfwkj6fu1bxtq.jpg"
+							alt="25 + 5 Clock"
+							className="project-img"
+						></img>
+						<div className="project-title">25 + 5 Clock</div>
+						<div className="project-description">
+							React.js Free Code Camp project assignment
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/25-5-Clock"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://25-5-clock-aki.netlify.app/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1 className="title">Contact</h1>
+					<p>
+						I would love to hear about your project and how I could help. Please
+						send me an email and I will get back to you as soon as possible.
+					</p>
+					<a href="mailto: j.adilovic@gmail.com" className="contact">
+						Contact me
+					</a>
+				</section>
+				<footer>
+					<Navbar />
+				</footer>
+			</main>
 		</div>
 	);
 }
