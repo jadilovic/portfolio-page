@@ -107,6 +107,7 @@ ul {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: grid;
+	align-items: stretch;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 2rem;
 }
@@ -128,6 +129,7 @@ ul {
 .skill,
 .project-title {
 	margin: 0;
+	font-size: 1.4em;
 	font-weight: 700;
 }
 
@@ -142,7 +144,7 @@ ul {
 	padding: 10px 0;
 }
 
-.title {
+.contact-title {
 	padding-top: 20px;
 	border-top: 2px solid white;
 }
@@ -239,6 +241,9 @@ footer {
 	.description {
 		flex-direction: column;
 		align-items: center;
+	}
+	p.experience {
+		font-size: 0.9em;
 	}
 	h4 {
 		margin: 0;

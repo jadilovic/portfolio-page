@@ -296,7 +296,7 @@ function App() {
 					</div>
 				</section>
 				<section>
-					<h1 className="title">Contact</h1>
+					<h1 className="contact-title">Contact</h1>
 					<p>
 						I would love to hear about your project and how I could help. Please
 						send me an email and I will get back to you as soon as possible.
