@@ -86,7 +86,7 @@ ul {
 	font-size: 0.8em;
 	border-bottom: #8cc84b 2px solid;
 	border-top: #61dafb 2px solid;
-	padding-bottom: 5px;
+	/* padding-bottom: 5px; */
 	width: fit-content;
 }
 
