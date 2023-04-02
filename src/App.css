@@ -83,10 +83,10 @@ ul {
 }
 
 .contact {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	border-bottom: #8cc84b 2px solid;
 	border-top: #61dafb 2px solid;
-	/* padding-bottom: 5px; */
+	padding: 5px 0;
 	width: fit-content;
 }
 
@@ -177,7 +177,7 @@ a {
 }
 
 .project-navigation a {
-	color: white;
+	color: black;
 	padding: 7px 10px 10px 10px;
 	font-size: 0.8em;
 	font-weight: 700;
@@ -270,6 +270,12 @@ p {
 	}
 	.card {
 		text-align: center;
+	}
+	.project-navigation a {
+		font-size: 1em;
+	}
+	.project-description {
+		font-size: 0.9em;
 	}
 }
 
