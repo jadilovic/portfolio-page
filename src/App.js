@@ -164,7 +164,7 @@ function App() {
 								code
 							</a>
 							<a
-								href="https://questions-answers-mp.herokuapp.com/"
+								href="https://questions-answers.onrender.com/"
 								className="project-demo-btn"
 							>
 								demo
@@ -189,7 +189,7 @@ function App() {
 								code
 							</a>
 							<a
-								href="https://user-management-m.herokuapp.com/"
+								href="https://user-management-wblz.onrender.com/"
 								className="project-demo-btn"
 							>
 								demo
