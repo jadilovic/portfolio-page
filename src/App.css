@@ -86,7 +86,7 @@ ul {
 	font-size: 0.8em;
 	border-bottom: #8cc84b 2px solid;
 	border-top: #61dafb 2px solid;
-	padding-bottom: 6px;
+	padding-bottom: 5px;
 	width: fit-content;
 }
 
@@ -107,8 +107,8 @@ ul {
 	max-width: 1200px;
 	margin: 0 auto;
 	display: grid;
-	align-items: stretch;
 	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 1fr;
 	gap: 2rem;
 }
 
@@ -122,6 +122,7 @@ ul {
 }
 
 .card {
+	position: relative;
 	color: white;
 	padding: 1rem 0;
 }
@@ -129,7 +130,7 @@ ul {
 .skill,
 .project-title {
 	margin: 0;
-	font-size: 1.4em;
+	font-size: 1em;
 	font-weight: 700;
 }
 
@@ -144,6 +145,10 @@ ul {
 	padding: 10px 0;
 }
 
+.project-description {
+	margin-bottom: 40px;
+}
+
 .contact-title {
 	padding-top: 20px;
 	border-top: 2px solid white;
@@ -156,12 +161,17 @@ ul {
 }
 
 .project-navigation {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	display: flex;
 	column-gap: 10px;
 	margin-bottom: 20px;
 }
 
 a {
+	text-align: center;
+	line-height: 28px;
 	color: white;
 	text-decoration: none;
 }
@@ -169,7 +179,7 @@ a {
 .project-navigation a {
 	color: white;
 	padding: 7px 10px 10px 10px;
-	font-size: 0.6em;
+	font-size: 0.8em;
 	font-weight: 700;
 	text-transform: uppercase;
 	border-radius: 7px;
@@ -190,6 +200,10 @@ a {
 footer {
 	border-top: 2px solid white;
 	margin: 60px 0;
+}
+
+p {
+	font-size: 0.8em;
 }
 
 @media screen and (max-width: 880px) {
