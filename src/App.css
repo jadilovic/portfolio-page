@@ -206,6 +206,10 @@ p {
 	font-size: 0.8em;
 }
 
+.notification {
+	font-size: 0.5em;
+}
+
 @media screen and (max-width: 880px) {
 	.welcome {
 		width: 50%;

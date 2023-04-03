@@ -70,6 +70,10 @@ function App() {
 						Contact me
 					</a>
 				</section>
+				<i className="notification">
+					Some fullstack demo projects might take up to 1 minute to load from
+					Render
+				</i>
 				<section className="cards">
 					<div className="card">
 						<img
