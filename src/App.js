@@ -198,12 +198,12 @@ function App() {
 					</div>
 					<div className="card">
 						<img
-							src="https://res.cloudinary.com/adilovic/image/upload/v1652207580/qs7xwigyvq7tmue3daad.jpg"
+							src="https://res.cloudinary.com/adilovic/image/upload/v1680518781/VacationBooking2022-05-10_nf8mt2.jpg"
 							alt="Vacation Booking"
 							className="project-img"
 						></img>
 						<div className="project-title">Vacation Booking</div>
-						<div className="project-description">MERN Stack Quiz</div>
+						<div className="project-description">React Quiz Application</div>
 						<div className="project-navigation">
 							<a
 								href="https://github.com/jadilovic/vacationBooking"
@@ -212,7 +212,7 @@ function App() {
 								code
 							</a>
 							<a
-								href="https://vacation-booking.herokuapp.com/"
+								href="https://vacation-booking-ja.netlify.app/"
 								className="project-demo-btn"
 							>
 								demo
@@ -288,6 +288,56 @@ function App() {
 							</a>
 							<a
 								href="https://25-5-clock-aki.netlify.app/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1680519122/notion-like-editor_wmmviw.jpg"
+							alt="notion like editor"
+							className="project-img"
+						></img>
+						<div className="project-title">Notion Like Editor</div>
+						<div className="project-description">
+							HTML, CSS, JavaScript and React Editor App
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/notion-like-editor"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://notio-like-editor.netlify.app/"
+								className="project-demo-btn"
+							>
+								demo
+							</a>
+						</div>
+					</div>
+					<div className="card">
+						<img
+							src="https://res.cloudinary.com/adilovic/image/upload/v1680519102/forsta-todo-app_t1buz2.jpg"
+							alt="to do application"
+							className="project-img"
+						></img>
+						<div className="project-title">ToDo App</div>
+						<div className="project-description">
+							HTML, CSS, JavaScript and React ToDo App
+						</div>
+						<div className="project-navigation">
+							<a
+								href="https://github.com/jadilovic/todosList"
+								className="project-code-btn"
+							>
+								code
+							</a>
+							<a
+								href="https://forsta-todo.netlify.app/"
 								className="project-demo-btn"
 							>
 								demo
